@@ -3,9 +3,10 @@ import os
 import sys
 import shutil
 from time import gmtime, strftime
+import time
 
-log_file = open('/tmp/copy-episode.log', 'a')
-log_file.write('======START========= ' + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + '===================\n')
+log_file = open('/var/log/copy-episode.log', 'a')
+log_file.write('======START========= ' + strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '===================\n')
 episode_dir = sys.argv[1]
 log_file.write('Episode Dir: ' + episode_dir + "\n")
 
@@ -20,6 +21,6 @@ dest_path = os.path.join(base_series_dest_dir, parse_results['title'], 'Season '
 
 log_file.write('Copying ' + episode_full_path + ' To: ' + dest_path + '\n') 
 shutil.copyfile(episode_full_path , dest_path)
-log_file.write('=======DONE======== ' + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + '===================\n')
+log_file.write('=======DONE======== ' + strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '===================\n')
 
 log_file.close()
