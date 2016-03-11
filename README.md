@@ -16,7 +16,7 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 
 ![alt tag](https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/Screen%20Shot%202016-03-11%20at%2012.40.54%20PM.png)
 
-* Use the [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) to specify where the tv shows is downloaded to:
+* Use the [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) to specify where the tv shows are downloaded to:
 
 ```ruby
 # Default directory to save the downloaded torrents.
@@ -29,7 +29,7 @@ directory = /mnt/500g/TV-Series/unsorted
 system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/python, /home/osmc/organizer/copy-episode.py, $d.get_base_path=, /mnt/500g/TV-Series"
 ```
   * 1st argument = the directory that just finished downloading.
-  * 2nd argument = the destination TV series root directory.
+  * 2nd argument = the destination TV series root directory, that Kodi knows.
   * The script parses the file name and copies it to the appropriate series directory. it scans for mkv files in the downloaded directory.
 
 
