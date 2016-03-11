@@ -4,6 +4,7 @@ import sys
 import shutil
 from time import gmtime, strftime
 import time
+import commands
 
 log_file = open('/var/log/copy-episode.log', 'a')
 log_file.write('======START========= ' + strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '===================\n')
@@ -23,4 +24,5 @@ log_file.write('Copying ' + episode_full_path + ' To: ' + dest_path + '\n')
 shutil.copyfile(episode_full_path , dest_path)
 log_file.write('=======DONE======== ' + strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '===================\n')
 
+commands.getstatusoutput("/usr/bin/kodi-send --host=127.0.0.1 --port=9777 --action=\"UpdateLibrary(video)\"")
 log_file.close()
