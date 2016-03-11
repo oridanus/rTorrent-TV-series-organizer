@@ -13,7 +13,7 @@ use [showRSS](http://new.showrss.info/) - to generate a feed with your favorite 
 
 configure the feed in your rTorrent - to download everything, with this regular expression - /()/i
 
-![alt tag](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt tag](https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/Screen%20Shot%202016-03-11%20at%2012.40.54%20PM.png)
 
 use the [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) to specify where the tv shows is downloaded to.
 
