@@ -23,13 +23,13 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 directory = /mnt/500g/TV-Series/unsorted
 ```
 
-* Confugre the last line of [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) for your directory sturcture. it tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on compeltion of each download. 
+* Confugre the last line of [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) for your directory sturcture. it tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on completion of each download. 
 
  ```python
 system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/python, /home/osmc/organizer/copy-episode.py, $d.get_base_path=, /mnt/500g/TV-Series"
 ```
   * 1st argument = the directory that just finished downloading.
   * 2nd argument = the destination TV series root directory.
-  * The script parses the file name and copies it to the appropriate series directory. it scans for mkv files.
+  * The script parses the file name and copies it to the appropriate series directory. it scans for mkv files in the downloaded directory.
 
 
