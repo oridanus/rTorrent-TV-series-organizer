@@ -3,7 +3,7 @@ Automatically organize your TV series downloads from rTorrent, to Kodi's directo
 
 ## Installation
 
-* Install [OSMC](https://osmc.tv/) 
+* Install [OSMC](https://osmc.tv/), or any other kodi enviroment as you wish.
 
 * Install rTorrent + ruTorrent, use this [wondeful script](https://github.com/Kerwood/Rtorrent-Auto-Install)
 
