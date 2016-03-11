@@ -18,7 +18,7 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 
 * Use the [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) to specify where the tv shows is downloaded to:
 
-```python
+```ruby
 # Default directory to save the downloaded torrents.
 directory = /mnt/500g/TV-Series/unsorted
 ```
