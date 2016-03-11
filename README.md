@@ -7,8 +7,8 @@ Automatically organize your TV series downloads from rTorrent, to Kodi's directo
 
 * install rTorrent + ruTorrent, use this [wondeful script](https://github.com/Kerwood/Rtorrent-Auto-Install)
 
-⋅⋅* isntall the base rtorrent 
-⋅⋅* install RSS plugin, with the plugin installation of the script.
+  * isntall the base rtorrent 
+  * install RSS plugin, with the plugin installation of the script.
 
 * use [showRSS](http://new.showrss.info/) - to generate a feed with your favorite shows
 
