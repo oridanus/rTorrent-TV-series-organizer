@@ -30,6 +30,6 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
 ```
   * 1st argument = the directory that just finished downloading.
   * 2nd argument = the destination TV series root directory.
-  * The script parses the file name and copies it to the apropriate series directory. it scans for mkv files.
+  * The script parses the file name and copies it to the appropriate series directory. it scans for mkv files.
 
 
