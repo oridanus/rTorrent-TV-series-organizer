@@ -1,7 +1,7 @@
 # rTorrent-TV-series-organizer
 automatically organize your TV series downloads from rTorrent, to Kodi's directory structure
 
-Installation
+## Installation
 
 install rTorrent + ruTorrent, use this wondeful script - https://github.com/Kerwood/Rtorrent-Auto-Install
 
