@@ -1,6 +1,9 @@
 # rTorrent TV Series Organizer
 Automatically organize your TV series downloads from rTorrent, to [Kodi](https://kodi.tv/)'s directory structure.
 
+![alt tag](http://i.imgur.com/wrpYku8.jpg)
+
+
 ## Installation
 
 * Install [OSMC](https://osmc.tv/), or any other kodi enviroment as you wish.
