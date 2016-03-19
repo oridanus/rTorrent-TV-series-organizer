@@ -51,7 +51,7 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
   * 2nd argument = the destination TV series root directory, this one is configured in Kodi as the TV shows dir.
   * The script parses the file name and copies it to the appropriate TV show directory.
   * 
-    ```python
+    ```bash
     TV Shows                  <<Source folder, Content: TV shows>>
    |----TV Show 1
    |       |----Season #
