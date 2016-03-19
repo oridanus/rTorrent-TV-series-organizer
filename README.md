@@ -50,10 +50,13 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
   * 1st argument = the directory that just finished downloading.
   * 2nd argument = the destination TV series root directory, this one is configured in Kodi as the TV shows dir.
   * The script parses the file name and copies it to the appropriate TV show directory.
-  * TV Shows                  <<Source folder, Content: TV shows>>
+  * 
+    ```python
+    TV Shows                  <<Source folder, Content: TV shows>>
    |----TV Show 1
    |       |----Season #
    |            |--Files
+    ``` 
 
   * It scans for mkv files in the downloaded directory.
   * After copying - it updates the Kodi's library, so you can just click and watch your show!
