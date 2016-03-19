@@ -57,6 +57,6 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
    |       |----Season #
    |            |--Files
     ``` 
-  * After copying - it updates the Kodi's library, so you can just click and watch your show!
+  * After copying - it updates the Kodi's library, so it's ready to watch on Kodi in one click!
 
 
