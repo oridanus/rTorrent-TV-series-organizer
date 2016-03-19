@@ -5,6 +5,7 @@ import shutil
 from time import gmtime, strftime
 import time
 import commands
+from distutils.dir_util import mkpath
 
 log_file = open('/var/log/copy-episode.log', 'a')
 log_file.write('======START========= ' + strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '===================\n')
@@ -21,6 +22,7 @@ parse_results = PTN.parse(episode_file)
 dest_path = os.path.join(base_series_dest_dir, parse_results['title'], 'Season ' + str(parse_results['season']), episode_file)
 
 log_file.write('Copying ' + episode_full_path + ' To: ' + dest_path + '\n') 
+mkpath(dest_path)
 shutil.copyfile(episode_full_path , dest_path)
 log_file.write('=======DONE======== ' + strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '===================\n')
 
