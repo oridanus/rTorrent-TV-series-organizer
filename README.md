@@ -31,7 +31,7 @@ directory = /mnt/500g/TV-Series/unsorted
 mkdir /home/osmc/organizer
 ```
 
-* download the 
+* download the [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script
 ```bash
 cd /home/osmc/organizer
 wget https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/copy-episode.py
