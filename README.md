@@ -59,7 +59,7 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
     ``` 
   * After copying - the script updates the Kodi's library, so your fresh episode is ready to watch in one click!
 
-* log file can be found in /var/log/copy-episode.log
+* Log file can be found in /var/log/copy-episode.log
   ```bash
   osmc@pi:~$ tail -9 /var/log/copy-episode.log
 ====== STARTING ========= 2016-03-31 18:07:07 ========================================================================
