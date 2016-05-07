@@ -64,7 +64,7 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
   osmc@pi:~$ tail -9 /var/log/copy-episode.log
 ====== STARTING ========= 2016-03-31 18:07:07 ========================================================================
 |  Source episode directory     = /mnt/500g/TV-Series/unsorted/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS[rarbg]
-|  Detention TV Shows directory = /mnt/500g/TV-Series
+|  Destination TV Shows directory = /mnt/500g/TV-Series
 |       Copying
 |  /mnt/500g/TV-Series/unsorted/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS[rarbg]/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS.mkv
 |       To
