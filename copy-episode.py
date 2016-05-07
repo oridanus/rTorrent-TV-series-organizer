@@ -14,7 +14,7 @@ log_file.write('|  Source episode directory     = ' + episode_dir + "\n")
 
 episode_full_path = os.path.join(episode_dir, [f for f in os.listdir(episode_dir) if f.endswith('.mkv')][0])
 base_series_dest_dir = sys.argv[2]
-log_file.write('|  Detention TV Shows directory = ' + base_series_dest_dir + "\n")
+log_file.write('| Destination TV Shows directory = ' + base_series_dest_dir + "\n")
 
 episode_file = os.path.basename(episode_full_path)
 parse_results = PTN.parse(episode_file)
