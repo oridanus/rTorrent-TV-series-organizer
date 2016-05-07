@@ -59,4 +59,16 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
     ``` 
   * After copying - the script updates the Kodi's library, so your fresh episode is ready to watch in one click!
 
-
+* Log file can be found in /var/log/copy-episode.log
+  ```bash
+  osmc@pi:~$ tail -9 /var/log/copy-episode.log
+====== STARTING ========= 2016-03-31 18:07:07 ========================================================================
+|  Source episode directory     = /mnt/500g/TV-Series/unsorted/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS[rarbg]
+|  Detention TV Shows directory = /mnt/500g/TV-Series
+|       Copying
+|  /mnt/500g/TV-Series/unsorted/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS[rarbg]/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS.mkv
+|       To
+|  /mnt/500g/TV-Series/The Americans/Season 4/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS.mkv
+|  Refreshing Kodi...
+======= DONE ============ 2016-03-31 18:14:35 ========================================================================
+```
