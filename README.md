@@ -15,7 +15,10 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 
 * Use [showRSS](http://new.showrss.info/) - to generate a feed with your favorite shows
 
-* Configure the feed in your rTorrent - to download everything, with this regular expression - /()/i
+* Configure the feed in your rTorrent - to download everything, with this regular expression -
+```ruby
+/()/i
+```
 
 ![alt tag](https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/Screen%20Shot%202016-03-11%20at%2012.40.54%20PM.png)
 
