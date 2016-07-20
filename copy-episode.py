@@ -18,6 +18,10 @@ log_file.write('| Destination TV Shows directory = ' + base_series_dest_dir + "\
 
 episode_file = os.path.basename(episode_full_path)
 parse_results = PTN.parse(episode_file)
+if(not parse_results.get('season')):
+	log_file.write('| Not a TV series episode. Exiting...\n')
+	sys.exit()
+
 dest_dir  = os.path.join(base_series_dest_dir, parse_results['title'], 'Season ' + str(parse_results['season']))
 dest_path = os.path.join(dest_dir, episode_file)
 
