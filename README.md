@@ -23,13 +23,6 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 
 ![alt tag](https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/Screen%20Shot%202016-03-11%20at%2012.40.54%20PM.png)
 
-* Use the [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) to specify where the tv shows are downloaded to:
-
- ```ruby
- # Default directory to save the downloaded torrents.
- directory = /mnt/500g/TV-Series/unsorted
- ```
-
 * create a dir for the organizer
  ```bash
  mkdir /home/osmc/organizer
@@ -44,6 +37,13 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 * install [parse-torrent-name](https://pypi.python.org/pypi/parse-torrent-name/0.1.0) python package (if you don't have pip yet installed, [here](https://pip.pypa.io/en/stable/installing) is the how-to)
   ```bash
  pip install parse-torrent-name
+ ```
+
+* Use the [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) to specify where the tv shows are downloaded to:
+
+ ```ruby
+ # Default directory to save the downloaded torrents.
+ directory = /mnt/500g/TV-Series/unsorted
  ```
 
 * Confugre the last line of [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) for your directory sturcture. it tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on completion of each download. 
