@@ -78,16 +78,16 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 
 ## Tips and Tricks
 
-* Mounting an SMB drive (for example connected to a router and shared), edit /etc/fstab -
+* Mounting an SMB drive (for example connected to a router and shared), edit /etc/fstab
   ```bash
  //192.168.1.1/volume(sda1)/ /mnt/500g cifs noauto,x-systemd.automount,username=name,password=name,uid=1000,gid=1000,iocharset=utf8 0 0
  ```
 
-* adding an alias called "log" to show the last episode downloaded from the log, edit ~/.bashrc -
+* adding an alias called "log" to show the last episode downloaded from the log, edit ~/.bashrc
   ```
   alias log='tail -9 /var/log/copy-episode.log'
   ```
-* show the last episode downloaded automaticly when you open the terminal, add this in the end of your ~/.bashrc - 
+* show the last episode downloaded automaticly when you open the terminal, add this in the end of your ~/.bashrc  
   ```
   echo
   log
