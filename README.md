@@ -44,6 +44,7 @@ wget https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/mas
 ```bash
 pip install parse-torrent-name
 ```
+  (if you don't have pip yet installed, [here](https://pip.pypa.io/en/stable/installing) is the how-to
 
 * Confugre the last line of [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) for your directory sturcture. it tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on completion of each download. 
 
