@@ -11,9 +11,10 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 * Install rTorrent + ruTorrent, use this [wondeful script](https://github.com/Kerwood/Rtorrent-Auto-Install)
 
   * Install the base rtorrent 
-  * Install RSS plugin, with the plugin installation of the script.
+  * Install RSS plugin, from the plugin installation menu.
 
 * Use [showRSS](http://new.showrss.info/) - to generate a feed with your favorite shows
+* Browse to rTorrent from your browser (<your-up>/rutorrent) and add the showRSS feed you created
 
 * Configure the feed in your rTorrent - to download everything, with this regular expression -
  ```ruby
