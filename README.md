@@ -89,7 +89,6 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
   ```
 * show the last episode downloaded automaticly when you open the terminal, add this in the end of your ~/.bashrc  
   ```
-  echo
   log
   ```
 
