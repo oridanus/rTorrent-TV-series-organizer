@@ -40,11 +40,10 @@ cd /home/osmc/organizer
 wget https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/copy-episode.py
 ```
 
-* install [parse-torrent-name](https://pypi.python.org/pypi/parse-torrent-name/0.1.0) python package
-```bash
-pip install parse-torrent-name
-```
-  (if you don't have pip yet installed, [here](https://pip.pypa.io/en/stable/installing) is the how-to
+* install [parse-torrent-name](https://pypi.python.org/pypi/parse-torrent-name/0.1.0) python package (if you don't have pip yet installed, [here](https://pip.pypa.io/en/stable/installing) is the how-to)
+  ```bash
+ pip install parse-torrent-name
+ ```
 
 * Confugre the last line of [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) for your directory sturcture. it tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on completion of each download. 
 
