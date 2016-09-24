@@ -16,29 +16,29 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 * Use [showRSS](http://new.showrss.info/) - to generate a feed with your favorite shows
 
 * Configure the feed in your rTorrent - to download everything, with this regular expression -
-```ruby
-/()/i
-```
+ ```ruby
+ /()/i
+ ```
 
 ![alt tag](https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/Screen%20Shot%202016-03-11%20at%2012.40.54%20PM.png)
 
 * Use the [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) to specify where the tv shows are downloaded to:
 
-```ruby
-# Default directory to save the downloaded torrents.
-directory = /mnt/500g/TV-Series/unsorted
-```
+ ```ruby
+ # Default directory to save the downloaded torrents.
+ directory = /mnt/500g/TV-Series/unsorted
+ ```
 
 * create a dir for the organizer
-```bash
-mkdir /home/osmc/organizer
-```
+ ```bash
+ mkdir /home/osmc/organizer
+ ```
 
 * download the [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script
-```bash
-cd /home/osmc/organizer
-wget https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/copy-episode.py
-```
+ ```bash
+ cd /home/osmc/organizer
+ wget https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/copy-episode.py
+ ```
 
 * install [parse-torrent-name](https://pypi.python.org/pypi/parse-torrent-name/0.1.0) python package (if you don't have pip yet installed, [here](https://pip.pypa.io/en/stable/installing) is the how-to)
   ```bash
@@ -47,9 +47,9 @@ wget https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/mas
 
 * Confugre the last line of [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc) for your directory sturcture. it tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on completion of each download. 
 
- ```python
-system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/python, /home/osmc/organizer/copy-episode.py, $d.get_base_path=, /mnt/500g/TV-Series"
-```
+  ```python
+ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/python, /home/osmc/organizer/copy-episode.py, $d.get_base_path=, /mnt/500g/TV-Series"
+ ```
   * 1st argument = the directory that just finished downloading.
   * 2nd argument = the destination TV series root directory, this one is configured in Kodi as the TV shows dir.
   * The script scans for mkv files in the downloaded directory, parses the file name and copies it to the appropriate TV show directory:
@@ -75,3 +75,21 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
 |  Refreshing Kodi...
 ======= DONE ============ 2016-03-31 18:14:35 ========================================================================
 ```
+
+## Tips and Tricks
+
+* Mounting an SMB drive (for example connected to a router and shared), edit /etc/fstab -
+  ```bash
+ //192.168.1.1/volume(sda1)/ /mnt/500g cifs noauto,x-systemd.automount,username=name,password=name,uid=1000,gid=1000,iocharset=utf8 0 0
+ ```
+
+* adding an alias called "log" to show the last episode downloaded from the log, edit ~/.bashrc -
+  ```
+  alias log='tail -9 /var/log/copy-episode.log'
+  ```
+* show the last episode downloaded automaticly when you open the terminal, add this in the end of your ~/.bashrc - 
+  ```
+  echo
+  log
+  ```
+
