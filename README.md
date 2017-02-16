@@ -32,6 +32,7 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
  ```bash
  cd /home/osmc/organizer
  wget https://raw.githubusercontent.com/oridanus/rTorrent-TV-series-organizer/master/copy-episode.py
+ chmod 777 copy-episode.py
  ```
 
 * Install [parse-torrent-name](https://pypi.python.org/pypi/parse-torrent-name/0.1.0) python package (if you don't have pip yet installed, [here](https://pip.pypa.io/en/stable/installing) is the how-to)
