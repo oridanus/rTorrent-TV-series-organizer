@@ -6,7 +6,8 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
 
 ## Installation
 
-* Install [OSMC](https://osmc.tv/), or any other kodi enviroment you wish.
+* Install [OSMC](https://osmc.tv/), or any other kodi enviroment you wish. 
+  rtorrent is not maintanted anymore so the versions that works for me are [OSMC 2017-06](http://download.osmc.tv/installers/diskimages/OSMC_TGT_rbp2_20170705.img.gz) with rtorrent Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
 
 * Install rTorrent + ruTorrent, use this [wondeful script](https://github.com/Kerwood/Rtorrent-Auto-Install)
 
