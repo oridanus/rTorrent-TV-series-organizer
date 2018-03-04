@@ -48,11 +48,11 @@ Automatically organize your TV series downloads from rTorrent, to [Kodi](https:/
  directory = /mnt/500g/TV-Series/unsorted
  ```
 
-* Configure the event to trigger when a download finishes in [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc). It tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on completion of each download. 
+* Configure the event to trigger when a download finishes in [.rtorrent.rc](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/.rtorrent.rc). It tells rtorrent to call [copy-episode.py](https://github.com/oridanus/rTorrent-TV-series-organizer/blob/master/copy-episode.py) script on completion of each download.
 
-  ```python
- system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/python, /home/osmc/organizer/copy-episode.py, $d.get_base_path=, /mnt/500g/TV-Series"
- ```
+```
+system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/python, /home/osmc/organizer/copy-episode.py, $d.get_base_path=, /mnt/500g/TV-Series"
+```
   * 1st argument = the directory that just finished downloading.
   * 2nd argument = the destination TV series root directory, this one is configured in Kodi as the TV shows dir.
   * The script scans for mkv files in the downloaded directory, parses the file name and copies it to the appropriate TV show directory:
