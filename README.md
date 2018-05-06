@@ -57,16 +57,20 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
   * 2nd argument = the destination TV series root directory, this one is configured in Kodi as the TV shows dir.
   * The script scans for mkv files in the downloaded directory, parses the file name and copies it to the appropriate TV show directory:
   
-    ```bash
+  
+```
     TV Shows                  <<Source folder, Content: TV shows>>
    |----TV Show 1
    |       |----Season #
    |            |--Files
-    ``` 
+```
+
   * After copying - the script updates the Kodi's library, so your fresh episode is ready to watch in one click!
 
 * Log file can be found in /var/log/copy-episode.log
-  ```bash
+
+
+```
   osmc@pi:~$ tail -9 /var/log/copy-episode.log
 ====== STARTING ========= 2016-03-31 18:07:07 ========================================================================
 |  Source episode directory     = /mnt/500g/TV-Series/unsorted/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS[rarbg]
@@ -77,6 +81,7 @@ system.method.set_key = event.download.finished,mycommand, "execute = /usr/bin/p
 |  /mnt/500g/TV-Series/The Americans/Season 4/The.Americans.2013.S04E03.720p.HDTV.x264-KILLERS.mkv
 |  Refreshing Kodi...
 ======= DONE ============ 2016-03-31 18:14:35 ========================================================================
+
 ```
 
 ## Tips and Tricks
